@@ -1,5 +1,9 @@
-@import "./reset";
+@import "./config/reset";
 @import "./config/valiable";
-@import "bootstrap";
+@import "./modules/side-bar";
+@import "./modules/chat";
+@import "./messages/messages";
+
+/*@import "bootstrap";*/
 @import "font-awesome";
 
