@@ -13,7 +13,7 @@
               = user.name
       .right-header
         .right-header__button
-          = link_to 'Edit'
+          = link_to 'Edit', edit_group_path(@group.id), method: :GET, class: 'chat-main__header--group-edit-btn'
     .messages
       = render @messages
     .form
