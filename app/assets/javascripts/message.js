@@ -1,7 +1,7 @@
 $(function(){
   function buildHTML(message){
     var message_image = message.image ? message.image : ""
-    var html = `<div class="message">
+    var html = `<div class="message" data-message-id="${message.id}">
                   <div class="upper-message">
                     <div class="upper-message__user--name">
                        ${message.user_name}
@@ -36,7 +36,7 @@ $(function(){
       var html = buildHTML(data);
       $('.messages').append(html);
       $('.form__message, .form__mask__image').val('');
-      $('.chat-body').animate({scrollTop: $('.chat-body').get(0).scrollHeight}, 'slow');
+      $('.message:last').animate({scrollTop: $('.message:last').get(0).scrollHeight}, 'slow');
     })
     .fail(function() {
       alert('error');
