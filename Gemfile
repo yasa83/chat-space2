@@ -66,3 +66,7 @@ group :test do
   gem 'rails-controller-testing'
   gem 'factory_girl_rails', '~> 4.0'
 end
+
+group :production do
+  gem 'unicorn'
+end
