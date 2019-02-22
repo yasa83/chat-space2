@@ -64,6 +64,7 @@ gem 'bootstrap'
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'fog-aws'
 
 group :test do
   gem 'faker'
